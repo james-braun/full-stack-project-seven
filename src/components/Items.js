@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import Gallery from './Gallery';
 import axios from 'axios';
-import apiKey from './Config.js';
+import apiKey from './config.js';
 
 
 class Items extends PureComponent {
