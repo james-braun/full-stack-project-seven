@@ -12,7 +12,7 @@ const App = () => {
             <div className="container">
                 <Route component={Header} />
                 <Route exact path="/" render={() => <Redirect to="/cats" />} />
-                <Route exact path="/full-stack-project-seven" render={() => <Redirect to="/full-stack-project-seven/cats" />} />
+                <Route exact path="/full-stack-project-seven/" render={() => <Redirect to="/full-stack-project-seven/cats" />} />
                 <Switch>
                     <Route exact path="/full-stack-project-seven/:name" component={Items} />
                     <Route component={Error} />
