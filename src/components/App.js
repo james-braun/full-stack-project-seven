@@ -11,9 +11,9 @@ const App = () => {
         <HashRouter>
             <div className="container">
                 <Route component={Header} />
-                <Route exact path="/" render={() => <Redirect to="#/cats" />} />
+                <Route exact path="/" render={() => <Redirect to="/cats" />} />
                 <Switch>
-                    <Route exact path="#/:name" component={Items} />
+                    <Route exact path="/:name" component={Items} />
                     <Route component={Error} />
                 </Switch>
             </div>
