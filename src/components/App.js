@@ -14,7 +14,7 @@ const App = () => {
                 <Route exact path="/" render={() => <Redirect to="/cats" />} />
                 <Route exact path="/full-stack-project-seven" render={() => <Redirect to="/cats" />} />
                 <Switch>
-                    <Route path="/" component={Items} />
+                    <Route path="cats" component={Items} />
                     <Route component={Error} />
                 </Switch>
             </div>
