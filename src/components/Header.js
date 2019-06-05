@@ -18,7 +18,7 @@ const Header = (props) => {
         tag = tag.replace(expression, "Error/404");
 
         // push input route to the address bar.
-        props.history.push(`/full-stack-project-seven/#/${tag}`);
+        props.history.push(`/#/${tag}`);
     }
 
     return (
