@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route, Redirect, Switch, hashHistory } from 'react-router-dom';
+import { HashRouter, Route, Redirect, Switch } from 'react-router-dom';
 import Header from './Header';
 import Items from './Items';
 import Error from './Error';
@@ -8,7 +8,7 @@ import Error from './Error';
 const App = () => {
     
     return (
-        <HashRouter history={hashHistory}>
+        <HashRouter>
             <div className="container">
                 <Route component={Header} />
                 <Route exact path="/" render={() => <Redirect to="/cats" />} />
